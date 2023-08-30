@@ -48,10 +48,10 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("TG_FRIENDSS")
-                await self.one.join_chat("VIP_CREATORS")
-                await self.one.join_chat("THE_VIP_BOY")
-                await self.one.join_chat("THE_VIP_BOY_OP")
+                await self.one.join_chat("O_P_Hacker")
+                await self.one.join_chat("Hacker_fed")
+                await self.one.join_chat("sunami_se_daro")
+                await self.one.join_chat("Princes_log_support_group")
             except:
                 pass
             assistants.append(1)
@@ -71,7 +71,7 @@ class Userbot(Client):
             )
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, f"**╔═══❰𝐖𝐄𝐋𝐂𝐎𝐌𝐄❱═══❍⊱❁۪۪**\n**║**\n**║┣⪼🥀𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝🎉**\n**║**\n**║┣⪼🏓𝐈𝐝:- {self.one.id}**\n**║**\n**║┣⪼💛𝐔-𝐍:- @{self.one.username}**\n**║ **\n**║┣⪼💖𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠😍**\n**║**\n**╚══════════════❍⊱❁**"
+                    config.LOG_GROUP_ID, f"**╔═══❰𝐖𝐄𝐋𝐂𝐎𝐌𝐄❱═══❍⊱❁۪۪**\n**║**\n**║┣⪼🥀𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝🎉**\n**║**\n**║┣⪼🏓𝐈𝐝:- {self.one.id}**\n**║**\n**║┣⪼❤️ 𝐇𝐀𝐂𝐊𝐄𝐑:- @{self.one.username}**\n**║ **\n**║┣⪼💖𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠😍**\n**║**\n**╚══════════════❍⊱❁**"
                 )
             except:
                 LOGGER(__name__).error(
@@ -81,10 +81,10 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("tg_friendss")
-                await self.two.join_chat("vip_creators")
-                await self.two.join_chat("THE_VIP_BOY")
-                await self.two.join_chat("THE_VIP_BOY_OP")
+                await self.two.join_chat("O_P_Hacker")
+                await self.two.join_chat("Hacker_fed")
+                await self.two.join_chat("sunami_se_daro")
+                await self.two.join_chat("Princes_log_support_group")
             except:
                 pass
             assistants.append(2)
@@ -114,10 +114,10 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("tg_friendss")
-                await self.three.join_chat("vip_creators")
-                await self.three.join_chat("THE_VIP_BOY")
-                await self.three.join_chat("THE_VIP_BOY_OP")
+                await self.three.join_chat("O_P_Hacker")
+                await self.three.join_chat("Hacker_fed")
+                await self.three.join_chat("sunami_se_daro")
+                await self.three.join_chat("Princes_log_support_group")
             except:
                 pass
             assistants.append(3)
@@ -147,10 +147,10 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("tg_friendss")
-                await self.four.join_chat("vip_creators")
-                await self.four.join_chat("THE_VIP_BOY")
-                await self.four.join_chat("THE_VIP_BOY_OP")
+                await self.four.join_chat("O_P_Hacker")
+                await self.four.join_chat("Hacker_fed")
+                await self.four.join_chat("sunami_se_daro")
+                await self.four.join_chat("Princes_log_support_group")
             except:
                 pass
             assistants.append(4)
@@ -180,9 +180,9 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("tg_friendss")
-                await self.five.join_chat("vip_creators")
-                await self.five.join_chat("THE_VIP_BOY")
+                await self.five.join_chat("O_P_Hacker")
+                await self.five.join_chat("Hacker_fed")
+                await self.five.join_chat("sunami_se_daro")
             except:
                 pass
             assistants.append(5)
