@@ -1,30 +1,31 @@
 import random
 import string
 from ast import ExceptHandler
-
 from pyrogram import filters
-from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto,
+from pyrogram import filters
+from pyrogram.types import (InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto,
                             Message)
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram,
+from VipX import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from AnonX.core.call import Anon
-from AnonX.utils import seconds_to_min, time_to_seconds
-from AnonX.utils.channelplay import get_channeplayCB
-from AnonX.utils.database import is_video_allowed
-from AnonX.utils.decorators.language import languageCB
-from AnonX.utils.decorators.play import PlayWrapper
-from AnonX.utils.formatters import formats
-from AnonX.utils.inline.play import (livestream_markup,
+from VipX.core.call import Vip
+from VipX.utils import seconds_to_min, time_to_seconds
+from VipX.utils.channelplay import get_channeplayCB
+from VipX.utils.database import is_video_allowed
+from VipX.utils.decorators.language import languageCB
+from VipX.utils.decorators.play import PlayWrapper
+from VipX.utils.formatters import formats
+from VipX.utils.inline.play import (livestream_markup,
                                           playlist_markup,
                                           slider_markup, track_markup)
-from AnonX.utils.inline.playlist import botplaylist_markup
-from AnonX.utils.logger import play_logs
-from AnonX.utils.stream.stream import stream
+from VipX.utils.database import is_served_user
+from VipX.utils.inline.playlist import botplaylist_markup
+from VipX.utils.logger import play_logs
+from VipX.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
@@ -326,7 +327,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Anon.stream_call(url)
+                await Vip.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "ᴛʜᴇʀᴇ's ᴀɴ ᴇʀʀᴏʀ ɪɴ ᴛʜᴇ ʙᴏᴛ, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴛᴏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴀs sᴏᴏɴ ᴀs ᴩᴏssɪʙʟᴇ."
@@ -590,7 +591,7 @@ async def anonymous_check(client, CallbackQuery):
 
 
 @app.on_callback_query(
-    filters.regex("AnonPlaylists") & ~BANNED_USERS
+    filters.regex("VipPlaylists") & ~BANNED_USERS
 )
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
